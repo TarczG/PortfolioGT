@@ -22,7 +22,7 @@ const context ={
             name:'Data Science Portfolio ',
             technology: 'HTML/CSS/JS',
             description: 'Strona przedstawiająca wyniki analiz z m.in. Python + Dash + Pandas',
-            image:'./resources/images/widokAkustyk.JPG',
+            image:'./resources/images/widokDS.JPG',
             url:'https://tarczg.github.io/DsPortfolio/',
             live:'https://tarczg.github.io/DsPortfolio/'
         },
@@ -37,7 +37,7 @@ const context ={
             name:'Analiza wpływu biedy na długość życia',
             technology: 'PYTHON, PANDAS, DASH',
             description: 'Analiza wpływu zamożności krajów na długość życia mieszkańców na przestrzeni lat i kontynentów',
-            image:'./resources/images/dsport.JPG',
+            image:'./resources/images/widokDS2.JPG',
             url:'https://github.com/TarczG/dashApp'
         },
         {
