@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT Studio </title>
+    <link href="./resources/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script id="templateIntroduction" type="text/x-handlebars-template">
+        <h1>
+            {{title}}
+        </h1>
+        <p>
+            {{body}}
+        </p>
+        <a class="mainButton"href="projects.html">
+            Projects</a>
+    </script>
+
+    <script id="templateProjects" type="text/x-handlebars-template">
+        {{#each projects}}
+        <article class="project">
+            <section class="details">
+                    <h2>
+                        {{this.name}}
+                    </h2>
+                    <p>
+                        {{this.technology}}
+                    </p>
+                    
+            </section>
+    </article>
+    <a href="{{this.url}}">></a>
+        {{/each}}
+    </script>
+
+    <script id="templateSkills" type="text/x-handlebars-template">
+        {{#each skills}}
+            <article class="TechnologySkill">
+                <img src="{{this.image}}" >
+                <h2>{{this.id}}</h2>
+                <div class="progressBar">
+                    <div id="{{this.progress}}"></div>
+                </div>
+                
+            </article>
+        {{/each}}
+    </script>
+
+</head>
+
+<body >
+    <header id="hiddenBar" class="flex-container">
+        <div id="logo">
+            <h1>GT</h1>
+        </div>
+        <nav>
+            <ul clas="navBar">
+                <li><a href="./index.html">Home</a></li>
+                <li id="current"><a href="./projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="backgroundHome" class="background">
+    </div>
+
+    <div id="content" class="white">
+        <article id="introduction">
+            <div id="photo">
+                <img src="./resources/images/GtPhoto.jpg" alt="">
+            </div>
+            <section id="information" class="information">
+
+            </section>
+        </article>
+        <div id="skills">
+            <h1>Skill</h1>
+            <section id="skillInformation" >
+  
+            </section>
+        </div>
+        <div id="actualProjects">
+            <h1>Aktualne Projekty </h1>
+            <section id="projectsList">
+            </section>
+        </div>
+        <div id="contact" >
+            <h1>Kontakt</h1>
+            <div class="flex-container">
+                <div class="contactDetails">
+                    <img src="./resources/images/location.svg" >
+                    <h2>Tel: 123456</h2>
+                </div>
+                <div class="contactDetails">
+                    <img src="./resources/images/location.svg" >
+                    <h2>Mail: tarcz.g@gmail.com</h2>
+                </div>
+                <div class="contactDetails">
+                    <img src="./resources/images/location.svg" >
+                    <h2>Adres: Poland</h2>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src='./resources/js/main.js'>
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GT Studio </title>
+    <link href="./resources/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script id="templateIntroduction" type="text/x-handlebars-template">
+        {{#each projects}}
+        <article id="projectPageProject">
+            <img src="{{this.image}}" >
+            <section id="detailsPageProject">
+                    <h2 id="projectTitle">
+                        {{this.name}}
+                    </h2>
+                    <h2 id="projectTechnology" class="item {{this.localisation}} {{this.type}} {{this.year}}">
+                        {{this.technology}}
+                    </h2>
+                    <p id="projectDescription">
+                        {{this.description}}
+                    </p>
+                    <a href="{{this.url}}" id="projectTechnology">CODE</a>
+                    {{#if live}}
+                    <a href="{{this.live}}" id="goldLink">LIVE</a>
+                    {{/if}}
+            </section>
+    </article>
+        {{/each}}
+    </script>
+
+
+</head>
+
+<body >
+    <header id="hiddenBar" class="flex-container">
+        <div id="logo">
+            <h1>GT</h1>
+        </div>
+        <nav>
+            <ul clas="navBar">
+                <li><a href="./index.html">Home</a></li>
+                <li id="current"><a href="./projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="backgroundHome" class="background">
+    </div>
+
+    <div id="contentProjects" class="grey">
+        <h1 id="headerProject">Projekty</h1>
+
+        <div class="flex-container">
+            <section id="information" class="flex-container">
+            </section>
+        </div>
+
+
+    </div>
+
+    <script src='./resources/js/main.js'>
+    </script>
+
+</body>
+
+</html>
