@@ -22,7 +22,7 @@ const context ={
             name:'Data Science Portfolio ',
             technology: 'HTML/CSS/JS',
             description: 'Strona przedstawiająca wyniki analiz z m.in. Python + Dash + Pandas',
-            image:'./resources/images/dsport.JPG',
+            image:'./resources/images/widokAkustyk.JPG',
             url:'https://tarczg.github.io/DsPortfolio/',
             live:'https://tarczg.github.io/DsPortfolio/'
         },
